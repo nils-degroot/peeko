@@ -48,3 +48,5 @@ MBO 4, Software development. **2015 - 2018**
 
 [Email](mailto:nils@peeko.nl)
 [Linkedin](https://www.linkedin.com/in/nilsdegroot/)
+
+© 2021 Nils de Groot
