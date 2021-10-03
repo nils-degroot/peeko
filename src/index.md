@@ -6,7 +6,7 @@
 
 **Current status**:
 
-* Internship at Mitsubishi Turbocharger and Engine Europe B.V.
+* Internship at Mitsubishi Turbocharger and Engine Europe
 * Completing my study at Windesheim in Almere
 
 ### Experiences
@@ -32,17 +32,17 @@ Apr 2019 – Jan 2020
 > Developed an native application for hobby fisherman to track their catches as
 > well as a couple other projects.
 
-### Educations
+### Education
 
 #### Windesheim in Almere
 
 Bachelors Degree, Software Engineering. **2020 - 2022**
 
-Associate's degree, Software Development. **2018 - 2020**
+Associate's Degree, Software Development. **2018 - 2020**
 
 #### ICT campus Hilversum
 
-MBO 4, Software development. **2015 - 2018**
+MBO 4, Software Development. **2015 - 2018**
 
 ### Contact
 
