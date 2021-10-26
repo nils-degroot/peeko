@@ -78,13 +78,13 @@ pre {
 
 a,
 a:visited {
-  color: #01ff70;
+  color: #8ec07c;
 }
 
 a:hover,
 a:focus,
 a:active {
-  color: #2ecc40;
+  color: #689d6a;
 }
 
 .retro-no-decoration {
@@ -180,7 +180,7 @@ textarea {
 
 html,
 body {
-  background-color: #222;
+  background-color: #282828;
   min-height: 100%;
 }
 
@@ -189,7 +189,7 @@ html {
 }
 
 body {
-  color: #fafafa;
+  color: #ebdbb2;
   font-family: "Georgia";
   line-height: 1.45;
   margin: 6rem auto 1rem;
@@ -202,7 +202,7 @@ pre {
 }
 
 blockquote {
-  border-left: 3px solid #01ff70;
+  border-left: 3px solid #8ec07c;
   padding-left: 1rem;
 }
 
