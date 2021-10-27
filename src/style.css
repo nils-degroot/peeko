@@ -190,7 +190,7 @@ html {
 
 body {
   color: #ebdbb2;
-  font-family: "Georgia";
+  font-family: Menlo, Monaco, "Courier New", monospace;
   line-height: 1.45;
   margin: 6rem auto 1rem;
   max-width: 48rem;
