@@ -4,12 +4,29 @@
 
 ### About me
 
+I am a Software Engineer from the Netherlands. Skilled in backend development.
+
+Programming experiance includes but is not limited to:
+
+- Rust
+- Scala
+- Kotlin
+- Visual Basic
+
+For some of my projects, checkout my [github](https://github.com/nils-degroot).
+
 **Current status**:
 
-* Internship at Mitsubishi Turbocharger and Engine Europe
-* Completing my study at Windesheim in Almere
+- Internship at Mitsubishi Turbocharger and Engine Europe.
+- Completing my study in Software Engineering at Windesheim in Almere.
 
 ### Experiences
+
+#### Internship Software Engineer at Mitsubishi Turbocharger
+
+September 2021 - February 2022
+
+> Building a production planning and production overview system.
 
 #### Software Engineer at RYSST
 
