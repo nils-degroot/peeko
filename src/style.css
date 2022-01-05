@@ -1,10 +1,3 @@
-/*@font-face {
-    font-family: "JetBrainsMono Nerd Font";
-    font-style: normal;
-    font-weight: normal;
-    src:url("JetBrains Mono Bold Nerd Font Complete.ttf");
-}*/
-
 pre,
 code {
   font-family: Menlo, Monaco, "Courier New", monospace;
@@ -78,13 +71,13 @@ pre {
 
 a,
 a:visited {
-  color: #8ec07c;
+  color: #98bc37;
 }
 
 a:hover,
 a:focus,
 a:active {
-  color: #689d6a;
+  color: #519f50;
 }
 
 .retro-no-decoration {
@@ -180,7 +173,7 @@ textarea {
 
 html,
 body {
-  background-color: #282828;
+  background-color: #1c1b19;
   min-height: 100%;
 }
 
@@ -189,7 +182,7 @@ html {
 }
 
 body {
-  color: #ebdbb2;
+  color: #fce8c3;
   font-family: Menlo, Monaco, "Courier New", monospace;
   line-height: 1.45;
   margin: 6rem auto 1rem;
@@ -202,7 +195,7 @@ pre {
 }
 
 blockquote {
-  border-left: 3px solid #8ec07c;
+  border-left: 3px solid #fed06e;
   padding-left: 1rem;
 }
 
