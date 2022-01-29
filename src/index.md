@@ -9,18 +9,24 @@ I am a Software Engineer from the Netherlands. Skilled in backend development.
 Programming experiance includes but is not limited to:
 
 - Rust
-- Scala
 - Kotlin
+- Scala
 - Visual Basic
 
 For some of my projects, checkout my [github](https://github.com/nils-degroot).
 
 **Current status**:
 
-- Internship at Mitsubishi Turbocharger and Engine Europe.
+- Internship at [Cloudflight](https://www.cloudflight.io/).
 - Completing my study in Software Engineering at Windesheim in Almere.
 
 ### Experiences
+
+#### Internship Software Engineer at Cloudflight
+
+February 2022 - June 2022
+
+> Todo
 
 #### Internship Software Engineer at Mitsubishi Turbocharger
 

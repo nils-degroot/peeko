@@ -1,10 +1,8 @@
 #! /usr/bin/env zsh
 
-if [ -d "build" ]; then
-    rm -rf build
+if [ ! -d "build" ]; then
+    mkdir build
 fi
-
-mkdir build
 
 SUBDOMAINS=("tools" "sprites")
 INPUT_DIR="$(realpath ./src)"
@@ -35,7 +33,10 @@ cp "$INPUT_DIR/favicon.ico" "$OUTPUT_DIR"
 
 # Prepare sub domains
 for sub in $SUBDOMAINS; do
-    mkdir "$OUTPUT_DIR/$sub"
+	if [ ! -d "$OUTPUT_DIR/$sub" ]; then
+		mkdir "$OUTPUT_DIR/$sub"
+	fi
+
     cp "$INPUT_DIR/favicon.ico" "$OUTPUT_DIR/$sub"
     STYLE="$INPUT_DIR/style.css" INPUT_DIR="$INPUT_DIR/$sub" OUTPUT_DIR="$OUTPUT_DIR/$sub" "$INPUT_DIR/$sub/build.sh"
 done
