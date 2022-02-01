@@ -26,8 +26,6 @@ For some of my projects, checkout my [github](https://github.com/nils-degroot).
 
 February 2022 - June 2022
 
-> Todo
-
 #### Internship Software Engineer at Mitsubishi Turbocharger
 
 September 2021 - February 2022
