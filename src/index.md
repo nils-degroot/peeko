@@ -36,7 +36,7 @@ September 2021 - February 2022
 
 #### Software Engineer at RYSST
 
-February 2021 - Present
+February 2021 - February 2022
 
 > Responsible for building the image flow for once of the biggest webshop in the
 > Netherlands.
