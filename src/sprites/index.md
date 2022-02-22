@@ -4,4 +4,4 @@
 
 ###### [Ricebowl](/sprites/ricebowl.txt)
 
-© 2021 Nils de Groot
+© 2022 Nils de Groot

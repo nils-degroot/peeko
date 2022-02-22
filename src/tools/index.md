@@ -6,4 +6,4 @@ My public git repositories
 
 A collection of unicode sprites
 
-© 2021 Nils de Groot
+© 2022 Nils de Groot
