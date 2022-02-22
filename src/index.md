@@ -20,11 +20,13 @@ For some of my projects, checkout my [github](https://github.com/nils-degroot).
 - Internship at [Cloudflight](https://www.cloudflight.io/).
 - Completing my study in Software Engineering at Windesheim in Almere.
 
-### Experiences
+### Experience
 
 #### Internship Software Engineer at Cloudflight
 
 February 2022 - June 2022
+
+> Developing spring applications for logistics.
 
 #### Internship Software Engineer at Mitsubishi Turbocharger
 
