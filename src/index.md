@@ -74,4 +74,4 @@ MBO 4, Software Development. **2015 - 2018**
 [Github](https://www.github.com/nils-degroot)
 [Private git](https://git.peeko.nl)
 
-© 2021 Nils de Groot
+© 2022 Nils de Groot
