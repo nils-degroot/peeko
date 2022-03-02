@@ -11,7 +11,7 @@ pagetitle: Nils de Groot
 
 I am a Software Engineer from the Netherlands. Skilled in backend development.
 
-Programming experiance includes but is not limited to:
+Programming experience includes but is not limited to:
 
 - Rust
 - Kotlin
