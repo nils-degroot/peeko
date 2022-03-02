@@ -1,3 +1,8 @@
+---
+author: Nils de Groot
+pagetitle: Nils de Groot
+---
+
 ![](nils-small.jpg)
 
 ## Nils de Groot
@@ -73,5 +78,3 @@ MBO 4, Software Development. **2015 - 2018**
 [Linkedin](https://www.linkedin.com/in/nilsdegroot/)
 [Github](https://www.github.com/nils-degroot)
 [Private git](https://git.peeko.nl)
-
-© 2022 Nils de Groot
