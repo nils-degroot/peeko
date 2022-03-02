@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-$for(author-meta)$
-  <meta name="author" content="$author-meta$" />
-$endfor$
-$if(date-meta)$
-  <meta name="dcterms.date" content="$date-meta$" />
-$endif$
-$if(keywords)$
-  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
-$endif$
-$if(description-meta)$
-  <meta name="description" content="$description-meta$" />
-$endif$
-  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
-  <style>
-    $styles.html()$
-  </style>
-$for(css)$
-  <link rel="stylesheet" href="$css$" />
-$endfor$
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+	$for(author-meta)$
+		<meta name="author" content="$author-meta$" />
+	$endfor$
+	$if(date-meta)$
+		<meta name="dcterms.date" content="$date-meta$" />
+	$endif$
+	$if(keywords)$
+		<meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
+	$endif$
+	$if(description-meta)$
+		<meta name="description" content="$description-meta$" />
+	$endif$
+	<title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+	<style>
+		$styles.html()$
+	</style>
+	$for(css)$
+	  <link rel="stylesheet" href="$css$" />
+	$endfor$
 </head>
 <body>
-$body$
-<p class="text-center">© 2022 Nils de Groot</p>
-
+	$body$
+	<p class="text-center">© 2022 Nils de Groot</p>
 </body>
 </html>
