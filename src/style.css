@@ -199,7 +199,7 @@ blockquote {
   padding-left: 1rem;
 }
 
-img {
+.img-round {
     border-radius: 50%;
 }
 

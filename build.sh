@@ -4,7 +4,7 @@ if [ ! -d "build" ]; then
     mkdir build
 fi
 
-SUBDOMAINS=("tools" "sprites")
+SUBDOMAINS=("tools" "sprites" "photos")
 INPUT_DIR="$(realpath ./src)"
 OUTPUT_DIR="$(realpath ./build)"
 
@@ -25,12 +25,15 @@ cat tmp.html | sed \
 
 # Copy favicon.ico
 cp "$INPUT_DIR/favicon.ico" "$OUTPUT_DIR"
+cp "$INPUT_DIR/style.css" "$OUTPUT_DIR"
 
 # Prepare sub domains
 for sub in $SUBDOMAINS; do
-	if [ ! -d "$OUTPUT_DIR/$sub" ]; then
-		mkdir "$OUTPUT_DIR/$sub"
+	if [ -d "$OUTPUT_DIR/$sub" ]; then
+		rm -rf "$OUTPUT_DIR/$sub"
 	fi
+
+	mkdir "$OUTPUT_DIR/$sub"
 
     cp "$INPUT_DIR/favicon.ico" "$OUTPUT_DIR/$sub"
     TEMPLATE="$INPUT_DIR/template.html" STYLE="$INPUT_DIR/style.css" INPUT_DIR="$INPUT_DIR/$sub" OUTPUT_DIR="$OUTPUT_DIR/$sub" "$INPUT_DIR/$sub/build.sh"
