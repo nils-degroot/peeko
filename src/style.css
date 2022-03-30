@@ -5,6 +5,7 @@
 
 :root {
     --bg: #1c1b19;
+	--bg-dark: #161614;
     --fg: #fce8c3;
     --fg-muted: #918175;
 	--link-active: #519f50;
@@ -128,4 +129,12 @@ blockquote {
 
 .text-center {
 	text-align: center;
+}
+
+.sourceCode {
+	background-color: var(--bg-dark);
+}
+
+code > span {
+	margin: 1em;
 }
