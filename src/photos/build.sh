@@ -5,14 +5,6 @@ PHOTO_OUT="$OUTPUT_DIR/photos"
 
 basepage=$(cat "$INPUT_DIR/index.md")
 
-# Remove unwanted tags
-cat "$INPUT_DIR/tmp.html" | sed \
-    -e '/^[[:space:]]*$/d' \
-    -e 's/<body/<body style=\"margin-top: 0\"/g' \
-    | cat > "$OUTPUT_DIR/index.html"
-
-rm "$INPUT_DIR/tmp.html"
-
 # Setup photos
 if [ -d "$PHOTO_OUT" ]; then
 	rm -rf $PHOTO_OUT
@@ -34,17 +26,18 @@ while true; do
 			break
 		fi
 
-		page+="\n\n![${photos[$photo_index]}](/photos/$photo_index.jpg)"
+		page+="\n\n![${photos[$photo_index]}](/photos/photos/$photo_index.jpg)"
 		cp "$PHOTO_DIR/${photos[$photo_index]}" "$PHOTO_OUT/$photo_index.jpg"
 	done
 
+	page+="\n\n[Back](/photos)"
+
 	echo "$page" | pandoc \
 	    -o "$OUTPUT_DIR/$pagenumber.html" \
-	    --css="/style.css" \
 		--template "$TEMPLATE" \
 		--metadata title="Peeko - Photos - $pagenumber"
 
-	basepage+="\n\n[Page $pagenumber](/$pagenumber.html)"
+	basepage+="\n\n[Page $pagenumber](/photos/$pagenumber.html)"
 
 	let "parent_i+=1"
 	if [ $((10*parent_i)) -gt ${#photos[@]} ]; then
@@ -52,10 +45,9 @@ while true; do
 	fi
 done
 
+basepage+="\n\n[Back](/)"
+
 # Build file
 echo "$basepage" | pandoc \
-    -o "$INPUT_DIR/tmp.html" \
-    --self-contained \
-    --css="$STYLE" \
+    -o "$OUTPUT_DIR/index.html" \
 	--template "$TEMPLATE"
-

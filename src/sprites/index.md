@@ -10,3 +10,5 @@ pagetitle: Peeko - Sprites
 ###### [Mudkip](/sprites/mudkip.txt)
 
 ###### [Ricebowl](/sprites/ricebowl.txt)
+
+[Back](/)

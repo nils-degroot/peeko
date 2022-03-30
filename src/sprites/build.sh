@@ -3,8 +3,6 @@
 # Build file
 pandoc "$INPUT_DIR/index.md" \
     -o "$INPUT_DIR/tmp.html" \
-    --self-contained \
-    --css="$STYLE" \
 	--template $TEMPLATE
 
 # Remove unwanted tags
@@ -13,6 +11,6 @@ cat "$INPUT_DIR/tmp.html" | sed \
     -e 's/<body/<body style=\"margin-top: 0\"/g' \
     | cat > "$OUTPUT_DIR/index.html"
 
-cp -r "$INPUT_DIR/sprites" "$OUTPUT_DIR/sprites"
+find "$INPUT_DIR/sprites" -type f -exec cp {} $OUTPUT_DIR \;
 
 rm "$INPUT_DIR/tmp.html"
