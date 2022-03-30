@@ -42,7 +42,7 @@ while true; do
 	    -o "$OUTPUT_DIR/$pagenumber.html" \
 	    --css="/style.css" \
 		--template "$TEMPLATE" \
-		--metadata title="Peeko - Photos - $parent_i"
+		--metadata title="Peeko - Photos - $pagenumber"
 
 	basepage+="\n\n[Page $pagenumber](/$pagenumber.html)"
 
