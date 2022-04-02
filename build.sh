@@ -25,7 +25,7 @@ rm tmp.html
 minify "$INPUT_DIR/style.css" > "$OUTPUT_DIR/style.css"
 
 # Copy favicon.ico
-cp "$INPUT_DIR/favicon.ico" "$INPUT_DIR/font.ttf" "$OUTPUT_DIR"
+cp "$INPUT_DIR/favicon.ico" "$INPUT_DIR/.htaccess" "$INPUT_DIR/font.ttf" "$OUTPUT_DIR"
 
 # Prepare sub domains
 for sub in $SUBDOMAINS; do
