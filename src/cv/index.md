@@ -20,12 +20,13 @@ Programming experience includes but is not limited to:
 
 For some of my projects, checkout my [github](https://github.com/nils-degroot).
 
-**Current status**:
-
-- Internship at [Cloudflight](https://www.cloudflight.io/).
-- Completing my study in Software Engineering at Windesheim in Almere.
-
 ### Experience
+
+#### Software Engineer at Cloudflight
+
+June 2022 and onwards
+
+> Developing spring applications for logistics.
 
 #### Internship Software Engineer at Cloudflight
 
