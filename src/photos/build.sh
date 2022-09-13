@@ -2,6 +2,7 @@
 
 IMAGE_PREFIX="/"
 PHOTO_OUT="$OUTPUT_DIR/photos"
+PAGE_SIZE=5
 
 basepage=$(cat "$INPUT_DIR/index.md")
 
@@ -20,8 +21,8 @@ while true; do
 	pagenumber=$((parent_i+1))
 	page="## Photos - $pagenumber"
 
-	for i in {1..10}; do
-		photo_index=$((10*parent_i+i))
+	for i in {1..$PAGE_SIZE}; do
+		photo_index=$(($PAGE_SIZE*parent_i+i))
 		if [ $photo_index -gt ${#photos[@]} ]; then
 			break
 		fi
@@ -40,7 +41,7 @@ while true; do
 	basepage+="\n\n[Page $pagenumber](/photos/$pagenumber.html)"
 
 	let "parent_i+=1"
-	if [ $((10*parent_i)) -gt ${#photos[@]} ]; then
+	if [ $(($PAGE_SIZE*parent_i)) -gt ${#photos[@]} ]; then
 		break
 	fi
 done
