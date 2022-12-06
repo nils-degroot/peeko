@@ -17,6 +17,10 @@ on my own git server. [You can find it here](https://git.peeko.nl).
 
 I also host most stuff on my [Github account](https://github.com/nils-degroot).
 
+#### [Blog](/blog)
+
+Stuff I wrote. Just technical.
+
 #### [Photos](/photos)
 
 I like to take pictures from time to time. Some of them I host on my domain for

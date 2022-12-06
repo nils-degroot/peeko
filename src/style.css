@@ -32,6 +32,7 @@ a:hover, a:focus, a:active {
 blockquote {
 	border-left: 3px solid var(--blockquote-indent);
 	padding-left: 1rem;
+	margin-left: 0rem;
 	color: var(--fg);
 }
 
@@ -128,10 +129,16 @@ blockquote {
 	text-align: center;
 }
 
-.sourceCode {
+code {
+	padding: .1em
 	background-color: var(--bg-dark);
+	font-family: JetBrainsMono, monospace;
 }
 
-code > span {
+.sourceCode {
+	background-color: var(--bg-dark) !important;
+}
+
+.sourceCode > pre {
 	margin: 1em;
 }

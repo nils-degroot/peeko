@@ -4,7 +4,7 @@ if [ ! -d "build" ]; then
     mkdir build
 fi
 
-SUBDOMAINS=("sprites" "photos" "cv")
+SUBDOMAINS=("sprites" "photos" "cv" "blog")
 INPUT_DIR="$(realpath ./src)"
 OUTPUT_DIR="$(realpath ./build)"
 
