@@ -13,6 +13,11 @@
   "type": "module",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@11ty/eleventy-plugin-pug": "^1.0.0"
+    "@11ty/eleventy-plugin-pug": "^1.0.0",
+    "@picocss/pico": "^2.1.1",
+    "sass": "^1.87.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3"
   }
 }
