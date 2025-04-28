@@ -3,6 +3,8 @@ import path from "node:path";
 import * as sass from "sass";
 
 export default function (eleventyConfig) {
+  eleventyConfig.setInputDirectory("src");
+
   eleventyConfig.addPlugin(pugPlugin);
 
   eleventyConfig.addTemplateFormats("scss");

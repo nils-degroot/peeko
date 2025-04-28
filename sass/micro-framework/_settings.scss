@@ -1,0 +1,107 @@
+/* Global */
+$easy-spacing: 1rem !default;
+$easy-border-radius: 0.25rem;
+
+/* Breakpoints */
+$easy-breakpoint-xl: 1450px !default;
+$easy-breakpoint-lg: 1280px !default;
+$easy-breakpoint-md: 1024px !default;
+$easy-breakpoint-sm: 768px !default;
+$easy-breakpoint-xs: 576px !default;
+
+/* Container related */
+$easy-container-xl-size: 1450px !default;
+$easy-container-lg-size: 1200px !default;
+$easy-container-md-size: 950px !default;
+$easy-container-sm-size: 700px !default;
+$easy-container-xs-size: 510px !default;
+$easy-container-spacing: $easy-spacing !default;
+
+/* Colors */
+$easy-color-primary: #46680f !default;
+$easy-color-primary-variant: #314f07 !default;
+$easy-color-secondary: #1d8281 !default;
+$easy-color-secondary-variant: #14696a !default;
+
+$easy-color-background: #24292e !default;
+$easy-color-surface: #2b3137 !default;
+$easy-color-error: #fff !default;
+
+$easy-color-on-primary: #fafbfc !default;
+$easy-color-on-secondary: #fafbfc !default;
+$easy-color-on-background: #fafbfc !default;
+$easy-color-on-surface: #fafbfc !default;
+$easy-color-on-error: #fafbfc !default;
+
+/* Text */
+$easy-font-family-emoji:
+	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+$easy-font-family-sans-serif:
+	system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, Arial,
+	"Helvetica Neue", sans-serif, $easy-font-family-emoji !default;
+
+$easy-font-family-monospace:
+	ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono",
+	monospace, $easy-font-family-emoji !default;
+
+$easy-font-family: $easy-font-family-sans-serif !default;
+
+$easy-font-weight: 400 !default;
+$easy-font-size: 100% !default;
+$easy-line-height: 1.5 !default;
+$easy-underline-offset: 0.1rem !default;
+
+/* Nav */
+$easy-nav-horizontal-spacing: 1rem !default;
+$easy-nav-vertical-spacing: 0.5rem !default;
+
+/* Typeography */
+$easy-typography-spacing: 1rem !default;
+$easy-header-font-weight: 700 !default;
+
+$easy-headers: (
+	"h1": (
+		"font-size": 2rem,
+		"line-height": 1.125,
+		"spacing-top": 3rem,
+		"font-weight": $easy-header-font-weight,
+	),
+	"h2": (
+		"font-size": 1.75rem,
+		"line-height": 1.15,
+		"spacing-top": 2.625rem,
+		"font-weight": $easy-header-font-weight,
+	),
+	"h3": (
+		"font-size": 1.5rem,
+		"line-height": 1.175,
+		"spacing-top": 2.25rem,
+		"font-weight": $easy-header-font-weight,
+	),
+	"h4": (
+		"font-size": 1.25rem,
+		"line-height": 1.2,
+		"spacing-top": 1.874rem,
+		"font-weight": $easy-header-font-weight,
+	),
+	"h5": (
+		"font-size": 1.125rem,
+		"line-height": 1.225,
+		"spacing-top": 1.6875,
+		"font-weight": $easy-header-font-weight,
+	),
+	"h6": (
+		"font-size": 1rem,
+		"line-height": 1.25,
+		"spacing-top": 1.5,
+		"font-weight": $easy-header-font-weight,
+	),
+) !default;
+
+/* Animations */
+$easy-animation: 0.2s ease-in-out;
+
+/* Code */
+$easy-code-background-color: $easy-color-surface;
+$easy-code-color: $easy-color-on-surface;

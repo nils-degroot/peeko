@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "eleventy --serve --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,6 +16,7 @@
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-plugin-pug": "^1.0.0",
     "@picocss/pico": "^2.1.1",
+    "@prettier/plugin-pug": "^3.3.0",
     "sass": "^1.87.0"
   },
   "devDependencies": {

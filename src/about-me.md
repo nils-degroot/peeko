@@ -30,7 +30,7 @@ Develop the Rust backend on the greenfield project for
 
 > **Software engineer**. Jun 2022 - May 2024.
 
-At Cloudflight I working a wide set of projects. Some key points here include: 
+At Cloudflight I working a wide set of projects. Some key points here include:
 
 - Develop java software for a big logistics company working with multiple
   teams, consult on future solutions and move away from a legacy system with a

@@ -17,6 +17,9 @@ importers:
       '@picocss/pico':
         specifier: ^2.1.1
         version: 2.1.1
+      '@prettier/plugin-pug':
+        specifier: ^3.3.0
+        version: 3.3.0(prettier@3.5.3)
       sass:
         specifier: ^1.87.0
         version: 1.87.0
@@ -191,6 +194,12 @@ packages:
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
+
+  '@prettier/plugin-pug@3.3.0':
+    resolution: {integrity: sha512-fO8lko9JbrU+lP9B/EMKcqYptTDaHHnwDpkhmOSiSgcavqAG3mQetpBuAD7+dIOBmTIdkCquteC+CDuxGCfVKg==}
+    engines: {node: '>=18.0.0', npm: '>=9.0.0'}
+    peerDependencies:
+      prettier: ^3.0.0
 
   '@sindresorhus/slugify@2.2.1':
     resolution: {integrity: sha512-MkngSCRZ8JdSOCHRaYd+D01XhvU3Hjy6MGl06zhOk614hp9EOAp5gIkBeQg7wtmxpitU6eAL4kdiRMcJa2dlrw==}
@@ -1244,6 +1253,11 @@ snapshots:
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
+
+  '@prettier/plugin-pug@3.3.0(prettier@3.5.3)':
+    dependencies:
+      prettier: 3.5.3
+      pug-lexer: 5.0.1
 
   '@sindresorhus/slugify@2.2.1':
     dependencies:

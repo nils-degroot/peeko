@@ -11,6 +11,7 @@ layout: base/index.pug
 > Repost from [the Cloudflight Engineering blog](https://engineering.cloudflight.io/why-kotlin-over-java)
 
 <!--toc:start-->
+
 - [A plain old Java object according to Kotlin](#a-plain-old-java-object-according-to-kotlin)
   - [Plain old Java objects](#plain-old-java-objects)
   - [Constructors](#constructors)
@@ -117,7 +118,7 @@ public class UserDto {
         this.name = name;
         this.email = email;
     }
-    
+
     ...
 }
 ```
@@ -148,7 +149,7 @@ more code to our `UserDto` class.
 ```java
 public class UserDto {
     ...
-    
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -321,7 +322,7 @@ fun sumTree(tree: Tree<Int>): Int = if (tree is Branch) {
     for (node in branch.nodes) {
         count += sumTree(node)
     }
-    
+
     count
 } else if (tree is Leaf) {
     val leaf = tree as Leaf

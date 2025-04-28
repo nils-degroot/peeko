@@ -1,13 +1,26 @@
 doctype html
 html(lang="en")
-
 	head
 		meta(charset="utf-8")
 		meta(name="viewport", container="width=device-width, initial-scale=1")
 		meta(name="color-scheme", container="light dark")
-		link(rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦝</text></svg>")
-		link(rel="stylesheet" href="/main.css")
-		title Peeko - #{title}
+		link(
+			rel="icon",
+			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦝</text></svg>"
+		)
+		link(rel="stylesheet", href="/main.css")
+		title Peeko - #{ title }
 
 	body
-		main.container !{content}
+		nav
+			ul
+				li
+					strong
+						a.contrast(href="/") Peeko
+			ul
+				li
+					a.contrast(href="/about-me") About me
+				li
+					a.contrast(href="/blog") Blog
+
+		main.container !{ content }

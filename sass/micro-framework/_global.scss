@@ -1,0 +1,51 @@
+@use "settings" as *;
+
+:where(:root),
+:where(:host) {
+	-webkit-tap-highlight-color: transparent;
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	background-color: $easy-color-background;
+	color: $easy-color-on-background;
+	font-weight: $easy-font-weight;
+	font-size: $easy-font-size;
+	line-height: $easy-line-height;
+	font-family: $easy-font-family;
+	text-underline-offset: $easy-underline-offset;
+	text-rendering: optimizeLegibility;
+	overflow-wrap: break-word;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+}
+
+address,
+blockquote,
+dl,
+ol,
+p,
+pre,
+table,
+ul {
+	margin-top: 0;
+	margin-bottom: $easy-typography-spacing;
+	color: $easy-color-on-background;
+	font-style: normal;
+	font-weight: $easy-font-weight;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0;
+	margin-bottom: $easy-typography-spacing;
+	color: $easy-color-on-background;
+	font-weight: $easy-font-weight;
+	font-size: $easy-font-size;
+	line-height: $easy-line-height;
+	font-family: $easy-font-family;
+}

@@ -1,6 +1,4 @@
 ---
-id: 2024-06-06-extensive-error-handling-in-rocket
-aliases: []
 tags:
   - blog
   - rust
