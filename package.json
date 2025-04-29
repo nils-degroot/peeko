@@ -17,6 +17,8 @@
     "@11ty/eleventy-plugin-pug": "^1.0.0",
     "@picocss/pico": "^2.1.1",
     "@prettier/plugin-pug": "^3.3.0",
+    "clean-css": "^5.3.3",
+    "highlight.js": "^11.11.1",
     "sass": "^1.87.0"
   },
   "devDependencies": {

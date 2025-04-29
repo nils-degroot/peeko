@@ -7,6 +7,7 @@ tags:
 date: "2024-06-06"
 title: Simple and idiomatic error handling in rocket
 layout: base/index.pug
+highlighting: true
 ---
 
 The [Rocket framework](https://rocket.rs/) framework required endpoint to

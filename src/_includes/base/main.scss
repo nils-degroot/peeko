@@ -1,0 +1,105 @@
+@use "node_modules/@picocss/pico/css/pico.css";
+@use "node_modules/highlight.js/styles/srcery.min.css";
+
+:root {
+	--dark-bg: #1c1b19;
+	--dark-fg: #fce8c3;
+	--dark-primary: #68a8e4;
+	--dark-secondary: #2be4d0;
+	--dark-blockquote-border: #e02c6d;
+	--dark-code-border-color: #918175;
+	--dark-code-background-color: #121212;
+	--light-bg: #fce8c3;
+	--light-fg: #1c1b19;
+	--light-primary: #2c78bf;
+	--light-secondary: #0aaeb3;
+	--light-blockquote-border: #e02c6d;
+	--light-code-border-color: #fce8c3;
+	--light-code-background-color: #baa67f;
+}
+
+/* Light color scheme (Default) */
+/* Can be forced with data-theme="light" */
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+	--pico-background-color: var(--light-bg);
+	--pico-color: var(--light-fg);
+	--pico-h1-color: var(--light-fg);
+	--pico-h2-color: var(--light-fg);
+	--pico-h3-color: var(--light-fg);
+	--pico-h4-color: var(--light-fg);
+	--pico-h5-color: var(--light-fg);
+	--pico-h6-color: var(--light-fg);
+	--pico-contrast: var(--light-fg);
+	--pico-contrast-hover: var(--light-fg);
+	--pico-primary: var(--light-primary);
+	--pico-primary-underline: var(--light-primary);
+	--pico-primary-hover-underline: var(--light-primary);
+	--pico-secondary: var(--light-secondary);
+	--pico-secondary-underline: var(--light-secondary);
+	--pico-secondary-hover-underline: var(--light-secondary);
+	--pico-blockquote-border-color: var(--light-blockquote-border);
+	--pico-code-color: var(--light-fg);
+	--pico-code-background-color: var(--light-code-background-color);
+	--code-border-color: var(--light-code-border-color);
+}
+
+/* Dark color scheme (Auto) */
+/* Automatically enabled if user has Dark mode enabled */
+@media only screen and (prefers-color-scheme: dark) {
+	:root:not([data-theme]) {
+		--pico-background-color: var(--dark-bg);
+		--pico-color: var(--dark-fg);
+		--pico-h1-color: var(--dark-fg);
+		--pico-h2-color: var(--dark-fg);
+		--pico-h3-color: var(--dark-fg);
+		--pico-h4-color: var(--dark-fg);
+		--pico-h5-color: var(--dark-fg);
+		--pico-h6-color: var(--dark-fg);
+		--pico-contrast: var(--dark-fg);
+		--pico-contrast-hover: var(--dark-fg);
+		--pico-primary: var(--dark-primary);
+		--pico-primary-underline: var(--dark-primary);
+		--pico-primary-hover-underline: var(--dark-primary);
+		--pico-secondary: var(--dark-secondary);
+		--pico-secondary-underline: var(--dark-secondary);
+		--pico-secondary-hover-underline: var(--dark-secondary);
+		--pico-blockquote-border-color: var(--dark-blockquote-border);
+		--pico-code-color: var(--dark-fg);
+		--pico-code-background-color: var(--dark-code-background-color);
+		--code-border-color: var(--dark-code-border-color);
+	}
+}
+/* Dark color scheme (Forced) */
+/* Enabled if forced with data-theme="dark" */
+[data-theme="dark"] {
+	--pico-background-color: var(--dark-bg);
+	--pico-color: var(--dark-fg);
+	--pico-h1-color: var(--dark-fg);
+	--pico-h2-color: var(--dark-fg);
+	--pico-h3-color: var(--dark-fg);
+	--pico-h4-color: var(--dark-fg);
+	--pico-h5-color: var(--dark-fg);
+	--pico-h6-color: var(--dark-fg);
+	--pico-contrast: var(--dark-fg);
+	--pico-contrast-hover: var(--dark-fg);
+	--pico-primary: var(--dark-primary);
+	--pico-primary-underline: var(--dark-primary);
+	--pico-primary-hover-underline: var(--dark-primary);
+	--pico-secondary: var(--dark-secondary);
+	--pico-secondary-underline: var(--dark-secondary);
+	--pico-secondary-hover-underline: var(--dark-secondary);
+	--pico-blockquote-border-color: var(--dark-blockquote-border);
+	--pico-code-color: var(--dark-fg);
+	--pico-code-background-color: var(--dark-code-background-color);
+	--code-border-color: var(--dark-code-border-color);
+}
+
+/* Fixes */
+blockquote > p:only-child {
+	margin-bottom: 0;
+}
+
+pre > code {
+	border: 1px solid var(--code-border-color);
+}

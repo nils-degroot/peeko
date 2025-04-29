@@ -4,8 +4,9 @@ tags:
   - blog
   - Kotlin
   - Java
-date: 2022-11-07
+date: "2022-11-07"
 layout: base/index.pug
+highlighting: true
 ---
 
 > Repost from [the Cloudflight Engineering blog](https://engineering.cloudflight.io/why-kotlin-over-java)

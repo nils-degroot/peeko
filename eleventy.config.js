@@ -1,32 +1,45 @@
 import pugPlugin from "@11ty/eleventy-plugin-pug";
+import CleanCSS from "clean-css";
 import path from "node:path";
 import * as sass from "sass";
 
 export default function (eleventyConfig) {
-  eleventyConfig.setInputDirectory("src");
+	eleventyConfig.setInputDirectory("src");
 
-  eleventyConfig.addPlugin(pugPlugin);
+	eleventyConfig.addPlugin(pugPlugin, {
+		filters: {
+			scssmin: function (text, options) {
+				let result = sass.compileString(text, {
+					loadPaths: ["."],
+				});
 
-  eleventyConfig.addTemplateFormats("scss");
+				return new CleanCSS({}).minify(result.css).styles;
+			},
+		},
+	});
 
-  eleventyConfig.addExtension("scss", {
-    outputFileExtension: "css",
-    useLayouts: false,
+	eleventyConfig.addTemplateFormats("scss");
 
-    compile: async function (inputContent, inputPath) {
-      let parsed = path.parse(inputPath);
+	eleventyConfig.addExtension("scss", {
+		outputFileExtension: "css",
+		useLayouts: false,
 
-      if (parsed.name.startsWith("_")) {
-        return;
-      }
+		compile: async function (inputContent, inputPath) {
+			let parsed = path.parse(inputPath);
 
-      let result = sass.compileString(inputContent, {
-        loadPaths: [parsed.dir || ".", this.config.dir.includes],
-      });
+			if (parsed.name.startsWith("_")) {
+				return;
+			}
 
-      this.addDependencies(inputPath, result.loadedUrls);
+			let result = sass.compileString(inputContent, {
+				loadPaths: [parsed.dir || ".", this.config.dir.includes],
+			});
 
-      return async () => result.css;
-    },
-  });
+			this.addDependencies(inputPath, result.loadedUrls);
+
+			return async () => result.css;
+		},
+	});
+
+	eleventyConfig.addPassthroughCopy("src/**/*.js");
 }
