@@ -1,6 +1,7 @@
 ---
 title: About me
 layout: base/index.pug
+description: Learn about Nils de Groot, a software engineer from the Netherlands with expertise in Rust, Kotlin, and Typescript. Explore his professional experience, certifications, and education background, including roles at Reclamefolder, Cloudflight, Rysst, and more.
 ---
 
 # About me

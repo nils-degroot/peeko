@@ -8,6 +8,7 @@ date: "2024-06-06"
 title: Simple and idiomatic error handling in rocket
 layout: base/index.pug
 highlighting: true
+description: "Learn how to implement simple and idiomatic error handling in the Rocket framework using Rust. This guide explores leveraging the `eyre` crate, custom error types, the `?` operator, and RFC 7807-compliant error responses for clean and maintainable code."
 ---
 
 The [Rocket framework](https://rocket.rs/) framework required endpoint to

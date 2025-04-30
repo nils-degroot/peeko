@@ -7,6 +7,7 @@ date: "2025-04-28"
 title: Web-service configuration using clap
 layout: base/index.pug
 highlighting: true
+description: "Learn how to configure web services in Rust using the Clap crate. This guide covers setting up base configurations, handling nested values, managing secrets securely, and integrating with the Poem framework for a robust and flexible application setup."
 ---
 
 Somewhat recently at work, we migrated our web services from the Rocket framework to Poem for several reasons. As part of that transition, we re-evaluated whether Rocket’s integrated [`figment`](https://docs.rs/figment/latest/figment/) was the right choice for us. We ultimately chose [`clap`](https://docs.rs/clap/latest/clap/) instead, as we found it simpler to set up and use.

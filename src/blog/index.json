@@ -1,4 +1,5 @@
 {
 	"title": "Home",
-	"layout": "base/index.pug"
+	"layout": "base/index.pug",
+	"description": "Blog posts I've written over the years"
 }

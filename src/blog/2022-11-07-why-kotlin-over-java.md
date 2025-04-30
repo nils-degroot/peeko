@@ -7,6 +7,7 @@ tags:
 date: "2022-11-07"
 layout: base/index.pug
 highlighting: true
+description: Discover why Kotlin is preferred over Java for server-side development. Learn about Kotlin's concise syntax, safer and more expressive code, null safety, interoperability with Java, and other powerful features that make it a modern alternative to Java.
 ---
 
 > Repost from [the Cloudflight Engineering blog](https://engineering.cloudflight.io/why-kotlin-over-java)
