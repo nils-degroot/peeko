@@ -23,7 +23,10 @@
 		"sass": "^1.87.0"
 	},
 	"devDependencies": {
+		"html-minifier": "^4.0.0",
 		"prettier": "^3.5.3",
+		"purgecss": "^7.0.2",
+		"purgecss-from-html": "^7.0.2",
 		"wrangler": "^4.14.0"
 	}
 }
