@@ -5,7 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"build": "eleventy",
-		"dev": "eleventy --serve --watch"
+		"dev": "eleventy --serve --watch",
+		"deploy": "npm run build && wrangler deploy"
 	},
 	"keywords": [],
 	"author": "",
@@ -22,6 +23,7 @@
 		"sass": "^1.87.0"
 	},
 	"devDependencies": {
-		"prettier": "^3.5.3"
+		"prettier": "^3.5.3",
+		"wrangler": "^4.14.0"
 	}
 }
