@@ -25,7 +25,7 @@ Develop the Rust backend on the greenfield project for
 - Develop the backend for the future of Reclamefolder in Rust.
 - Provide proof of concepts for new technologies to see if we want to use them.
 - Design and implement a micro-service fleet of services.
-- Implement and maintain Pulumi IAC code for AWS.
+- Implement and maintain Pulumi IAC code for both AWS and GCP.
 
 ## Cloudflight
 
