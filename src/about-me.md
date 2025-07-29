@@ -13,7 +13,7 @@ Almere. Some of my primary programming skills include but are not limited to:
 - Kotlin
 - Typescript
 
-I'm currently open to new challenges, lets talk on [linkedin](https://www.linkedin.com/in/nilsdegroot/) or email me at [nils@peeko.nl](mailto:nils@peeko.nl)
+I'm currently open to new challenges. Contact me at [nils@peeko.nl](mailto:nils@peeko.nl)
 
 # Working experience
 
